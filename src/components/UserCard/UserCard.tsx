@@ -1,14 +1,10 @@
-import { UserInfo } from 'components/UserInfo';
-import { UserStat } from 'components/UserStat';
-import { UserTitle } from 'components/UserTitle';
-import { LocalGithabUser } from 'types';
-import styles from './UserCard.module.scss';
-// import * as React from 'react';
+import { UserInfo } from "components/UserInfo";
+import { UserStat } from "components/UserStat";
+import { UserTitle } from "components/UserTitle";
+import { LocalGithabUser } from "types";
+import styles from "./UserCard.module.scss";
 
 interface UserCardProps extends LocalGithabUser { }
-
-
-
 
 export const UserCard = (props: UserCardProps) => {
   const {repos, followers, following, created, login, name, blog, location, twitter, company, avatar, bio } = props;

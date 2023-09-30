@@ -1,5 +1,5 @@
-import * as React from 'react';
-import styles from './InfoItem.module.scss';
+import * as React from "react";
+import styles from "./InfoItem.module.scss";
 
 export interface InfoItemProps { 
   icon: React.ReactNode,
@@ -14,8 +14,6 @@ export const InfoItem = ({ icon, isLink, text }: InfoItemProps) => {
   if (isLink) {
     currentHref = text && text.startsWith("http") ? text : `https://${text}`;
   }
-
-
 
   return (
     <div className={`${styles.infoItem}${text ? "" : `${styles.empty}`}`}>

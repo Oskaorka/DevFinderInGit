@@ -1,7 +1,6 @@
-import { InfoItem, InfoItemProps } from 'components/InfoItem';
-import * as React from 'react';
-import { LocalGithabUser } from 'types';
-import styles from './UserInfo.module.scss';
+import { InfoItem, InfoItemProps } from "components/InfoItem";
+import { LocalGithabUser } from "types";
+import styles from "./UserInfo.module.scss";
 import {ReactComponent as CompanyIcon} from "assets/icon-company.svg"
 import {ReactComponent as LocationIcon} from "assets/icon-location.svg"
 import {ReactComponent as TwitterIcon} from "assets/icon-twitter.svg"
@@ -29,7 +28,6 @@ export const UserInfo = ({ blog, company, location, twitter }: UserInfoProps) =>
       text: company,
     },
   ]
-
 
   return (
     <div className={styles.userInfo}>
